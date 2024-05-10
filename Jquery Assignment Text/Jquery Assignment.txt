@@ -1,0 +1,100 @@
+                                                                                                                           Jquery assigment
+Q.1: What is Jquery?
+     
+Ans: jQuery is a small, light-weight and fast JavaScript library. 
+        It is cross-platform and supports different types of browsers.
+             jQuery is a small, fast and lightweight JavaScript library.
+             jQuery is platform-independent.     
+             jQuery means "write less do more".     
+             jQuery simplifies AJAX call and DOM manipulation.
+
+
+Q.2: How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?
+
+Ans:           
+      Applying CSS Using jQuery
+
+You can use jQuery to apply CSS styles to HTML elements. There are a few ways to achieve this:
+
+1.   Using  css()  Method  :
+   The  css()  method in jQuery allows you to get or set CSS properties for selected elements.
+
+      javascript
+       Set CSS properties
+   $('#myElement').css('color', 'red');
+   $('#myElement').css({
+       'font-size': '20px',
+       'background-color': 'yellow'
+   });
+
+       Get CSS property
+   var fontSize = $('#myElement').css('font-size');
+      
+
+2.   Adding a CSS Class  :
+   Instead of directly setting styles, it's often cleaner to add or remove classes, especially for complex styling.
+
+      Adding Class and Removing Class in jQuery
+
+1.   Adding a Class  :
+   You can use the  addClass()  method to add a class to selected elements.
+
+      javascript
+   $('#myElement').addClass('highlight');
+      
+
+2.   Removing a Class  :
+   Similarly, use  removeClass()  method to remove a class from selected elements.
+
+      javascript
+   $('#myElement').removeClass('highlight');
+      
+
+      jQuery Animation
+
+jQuery provides easy-to-use methods for animations, allowing you to create effects like fading, sliding, and more.
+
+1.   Basic Animation  :
+   You can use the  animate()  method to perform custom animations on selected elements.
+
+      javascript
+   $('#myElement').animate({
+       opacity: 0.5,
+       left: '+=50',
+       height: 'toggle'
+   }, 1000, function() {
+           Animation complete
+   });
+      
+
+   Here:
+   -  opacity: 0.5  makes the element half transparent.
+   -  left: '+=50'  moves the element 50 pixels to the right.
+   -  height: 'toggle'  toggles the height (either hides or shows the element).
+
+2.   Fading and Sliding Effects  :
+   jQuery provides methods like  fadeIn() ,  fadeOut() ,  slideDown() ,  slideUp() , etc., for common animation effects.
+
+      javascript
+   $('#myElement').fadeIn(1000);     Fade in over 1 second
+   $('#myElement').slideUp(500);     Slide up over 0.5 seconds
+      
+
+Remember to include jQuery in your HTML file before using these scripts:
+
+   html
+<script src="https:   code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+
+Ensure that all jQuery code is executed after the DOM has fully loaded:
+
+   javascript
+$(document).ready(function() {
+        Your jQuery code here
+});
+   
+
+These examples should get you started with applying CSS, adding/removing classes, and using animations with jQuery.
+ Feel free to adapt them based on your specific needs.
+
+
